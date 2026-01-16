@@ -10,7 +10,25 @@ html{
     align-items: center;
 }
 body {
-    background-color: #f5f7fa;
+    background-color: #f0f4f8;   /* light professional color */
+}
+.home {
+    background: linear-gradient(135deg, #1abc9c, #2c3e50);
+    color: white;
+}
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-list li {
+    list-style: none;
+    background: #2c3e50;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
 }
 
 .section {
@@ -40,7 +58,6 @@ body {
     background-color: #1abc9c;
 }
 
-
 .navbar{
     display: flex;
     justify-content: space-around;
@@ -64,6 +81,14 @@ body {
 .nav-links a:hover{
     text-decoration: underline;
     color: #1abc9c;
+}
+nav ul li a:hover {
+    color: #1abc9c;
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 .section{
     padding: 60px 20px;
@@ -125,6 +150,7 @@ button {
         flex-direction: column;
         gap: 15px;
     }
+}
 @media (max-width: 600px) {
     .nav-links{
         flex-direction: column;
@@ -132,3 +158,85 @@ button {
         gap: 10px;
     }   
 }
+/* NAVBAR FIX */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #2c3e50;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #1abc9c;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #1abc9c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #148f77;
+}
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #1abc9c;
+}
+.social-icons a {
+    color: white;
+    font-size: 32px;   /* BIGGER ICONS */
+    margin: 0 15px;
+    transition: 0.3s;
+}
+.footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+.footer-social {
+    margin-top: 10px;
+}
+
+.footer-social a {
+    color: white;
+    font-size: 28px;
+    margin: 0 10px;
+}
+
+.footer-social a:hover {
+    color: #1abc9c;
+}
+
