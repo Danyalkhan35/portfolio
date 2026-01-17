@@ -323,10 +323,41 @@ button {
 }
 
 
-@media (max-width: 868px) {
+@media (max-width: 768px) {
     .menu-toggle {
         display: block;
     }
 }
+/* HAMBURGER ICON */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #2c3e50;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li {
+        padding: 15px 0;
+    }
+}
+
 
 
